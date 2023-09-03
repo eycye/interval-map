@@ -22,8 +22,6 @@ public:
 	**/	
 	void assign( K const& keyBegin, K const& keyEnd, V const& val ) {
 		// effectively operator=( K const& key )
-		// INSERT YOUR SOLUTION HERE
-
 		if ( keyBegin >= keyEnd ) return;
 		
 		// base case: empty m_map
@@ -87,10 +85,7 @@ public:
 	}
 };
 
-// Many solutions we receive are incorrect. Consider using a randomized test
-// to discover the cases that your implementation does not handle correctly.
-// We recommend to implement a test function that tests the functionality of
-// the interval_map, for example using a map of int intervals to char.
+// Test the functionality of the `interval_map`, for example using a map of int intervals to char.
 void IntervalMapTest() {
 	interval_map<char,int> test1('A');
 	test1.assign(1,3,'B');
